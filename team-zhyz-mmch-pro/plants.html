@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Удивительная планета — Растения</title>
+</head>
+<body id="top" bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b">
+
+<table width="97%" border="0" cellpadding="0" cellspacing="0" align="center">
+    <tr bgcolor="#b8dc7c">
+        <td align="center">
+            <!-- h1 — общий заголовок портала; оставь его на каждой странице. -->
+            <h1>Удивительная планета</h1>
+        </td>
+    </tr>
+
+    <tr bgcolor="#e0e0e0">
+        <td align="center">
+            <!--
+                Ссылки ниже используют относительные пути.
+                Все пять HTML-файлов лежат в одной папке, поэтому достаточно имени файла.
+            -->
+            <p>
+                <a href="index.html">Главная</a> |
+                <a href="geography.html">География</a> |
+                <a href="animals.html">Животные</a> |
+                <a href="plants.html">Растения</a> |
+                <a href="sources.html">Информационные источники</a>
+            </p>
+        </td>
+    </tr>
+
+    <tr>
+        <td>
+
+            <h2 align="center">Растения</h2>
+
+            <p><strong>Быстрый переход:</strong></p>
+            <ul>
+                <li><a href="#plants-records">Рекорды растений</a></li>
+                <!-- Добавь ссылки на остальные таблицы после переноса данных из Planeta_text.doc. -->
+            </ul>
+
+            <h3 id="plants-records">Рекорды растений</h3>
+
+            <!--
+                Заполни таблицу реальными данными из Planeta_text.doc.
+                В первой строке thead оставлен групповой заголовок:
+                colspan="2" объединяет две соседние колонки под общим названием.
+                Если реальная таблица требует другого числа колонок, пересчитай colspan.
+            -->
+            <table border="1" cellpadding="4" cellspacing="4" width="100%">
+                <caption><strong>Рекорды растений</strong></caption>
+                <thead bgcolor="#d9ead3">
+                    <tr>
+                        <th>№</th>
+                        <!-- colspan="2": общий заголовок занимает две колонки второй строки шапки. -->
+                        <th colspan="2">Данные о растении</th>
+                    </tr>
+                    <tr>
+                        <th>№</th>
+                        <th>Название</th>
+                        <th>Показатель</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Добавляй по одному tr на каждую запись из Planeta_text.doc. -->
+                </tbody>
+            </table>
+            <p><a href="#top">ВВЕРХ</a></p>
+
+            <!--
+                Для каждой следующей таблицы растений:
+                1) создай h3 с id;
+                2) добавь ссылку в "Быстрый переход";
+                3) перенеси все строки из документа;
+                4) используй colspan только там, где заголовок реально объединяет несколько колонок;
+                5) перед каждым colspan оставь комментарий, сколько колонок и почему объединяются.
+            -->
+
+            <!-- Для изображений обязательны существующий src, alt, width и height. -->
+
+        </td>
+    </tr>
+
+    <tr bgcolor="#4a4a4a">
+        <td align="center">
+            <!-- footer завершает страницу и остаётся после всего основного контента. -->
+            <p><font color="#ffffff">© Учебный проект микро-команды студентов, 2026</font></p>
+        </td>
+    </tr>
+</table>
+
+</body>
+</html>
