@@ -28,10 +28,14 @@
             </td>
         </tr>
 
-        <!-- Горизонтальное меню под баннером, как в образце -->
+        <!--
+            ИЗМЕНЕНО: высота строки меню установлена 19 px,
+            а ширина области меню — 730 px.
+            Причина: это точнее повторяет положение навигации на дизайн-образце.
+        -->
         <tr>
-            <td height="27" valign="middle">
-                <table width="720" border="0" cellpadding="0" cellspacing="0" align="center">
+            <td height="19" valign="middle">
+                <table width="730" border="0" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                         <td>
                             <a href="index.html">Главная</a>
@@ -52,14 +56,17 @@
         <tr>
             <td>
                 <!--
-                    ИЗМЕНЕНО: основная область разделена на голубую левую колонку 120 px
-                    и белую область контента 600 px, как в дизайн-образце.
+                    ИЗМЕНЕНО: основная область оставлена шириной 720 px:
+                    120 px голубая колонка + 600 px белая область.
+                    Вертикальные интервалы боковых изображений рассчитаны как
+                    26 + 100 + 20 + 100 + 20 + 100 + 30 = 396 px.
+                    Причина: так расположение изображений точнее совпадает с образцом.
                 -->
                 <table width="720" border="0" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                         <td width="120" height="396" valign="top" bgcolor="#acc2d0">
                             <table width="120" border="0" cellpadding="0" cellspacing="0">
-                                <tr><td height="17">&nbsp;</td></tr>
+                                <tr><td height="26">&nbsp;</td></tr>
                                 <tr>
                                     <td align="center">
                                         <img src="../Images/team-zhyz-mmch-pro/mountain.jpg"
@@ -86,7 +93,7 @@
                                              height="100">
                                     </td>
                                 </tr>
-                                <tr><td height="35">&nbsp;</td></tr>
+                                <tr><td height="30">&nbsp;</td></tr>
                             </table>
                         </td>
 
