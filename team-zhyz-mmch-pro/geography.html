@@ -15,26 +15,30 @@
     <table width="800" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#b8dc7c">
 
         <!--
-            ИЗМЕНЕНО: текстовая шапка заменена оригинальным баннером из Images.
-            Причина: это точный графический элемент дизайн-образца.
+            ИЗМЕНЕНО: для баннера используется оригинальный Title.png на зелёном фоне ячейки.
+            Причина: PNG сохраняет прозрачные участки изображения; зелёный фон просвечивает через них,
+            поэтому между баннером и меню не появляется белая полоса.
         -->
         <tr>
-            <td>
+            <td bgcolor="#b8dc7c">
                 <img
-                    src="../Images/team-zhyz-mmch-pro/Title.jpg"
+                    src="../Images/team-zhyz-mmch-pro/Title.png"
                     alt="Удивительная планета"
                     width="800"
-                    height="231">
+                    height="222">
             </td>
         </tr>
 
         <!--
-            ИЗМЕНЕНО: высота строки меню установлена 19 px,
-            а ширина области меню — 730 px.
-            Причина: это точнее повторяет положение навигации на дизайн-образце.
+            ИЗМЕНЕНО: высота баннера установлена 222 px, а строки меню — 28 px.
+            Суммарная высота шапки составляет 250 px.
+            Причина: на дизайн-образце текст навигации имеет заметные
+            и практически симметричные отступы сверху и снизу,
+            при этом основная область начинается почти на прежнем уровне.
+            Ширина области меню остаётся 730 px.
         -->
         <tr>
-            <td height="19" valign="middle">
+            <td height="28" valign="middle">
                 <table width="730" border="0" cellpadding="0" cellspacing="0" align="center">
                     <tr>
                         <td>
@@ -98,7 +102,12 @@
                         </td>
 
                         <td width="600" height="396" valign="top" bgcolor="#ffffff">
-                            <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                            <!--
+                                                ИЗМЕНЕНО: содержательные таблицы имеют ширину 96% и выровнены по центру.
+                                                Причина: на дизайн-образце таблицы имеют поля слева и справа внутри белой области.
+                                                Заголовочные строки оставлены белыми через bgcolor="#ffffff".
+                                            -->
+                                            <table width="100%" border="0" cellpadding="10" cellspacing="0">
                                 <tr>
                                     <td>
 
@@ -118,10 +127,10 @@
                                                 <li><a href="#largest-lakes">Самые большие озера</a></li>
                                             </ul>
 
-                                            <table id="largest-states" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="largest-states" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые большие (по площади) государства</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Площадь, тыс. км<sup>2</sup></th>
@@ -155,12 +164,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="smallest-states" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="smallest-states" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые маленькие (по площади) государства</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Площадь, км<sup>2</sup></th>
@@ -194,12 +203,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="longest-rivers" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="longest-rivers" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые длинные реки</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Длина, км</th>
@@ -239,12 +248,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="deepest-seas" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="deepest-seas" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые глубокие моря</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Глубина, м</th>
@@ -284,12 +293,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="largest-volcanoes" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="largest-volcanoes" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые большие вулканы</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Высота, м</th>
@@ -329,12 +338,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="largest-islands" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="largest-islands" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые большие острова</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Площадь, тыс. км<sup>2</sup></th>
@@ -374,12 +383,12 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
 
-                                            <table id="largest-lakes" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                            <table id="largest-lakes" border="1" cellpadding="4" cellspacing="4" width="96%" align="center">
                                                 <caption><strong>Самые большие (по площади) озера</strong></caption>
                                                 <thead>
-                                                    <tr bgcolor="#d9ead3">
+                                                    <tr bgcolor="#ffffff">
                                                         <th>№</th>
                                                         <th>Название</th>
                                                         <th>Площадь, тыс. км<sup>2</sup></th>
@@ -419,7 +428,7 @@
                                                     </tr>
                                                 </tbody>
                                             </table>
-                                            <p><a href="#top">ВВЕРХ</a></p>
+                                            <p align="right"><a href="#top">ВВЕРХ</a></p>
                                     </td>
                                 </tr>
                             </table>
@@ -436,7 +445,7 @@
             <td height="46" align="center" valign="middle">
                 © Все права защищены. В.В. Фуфаев, 2023
                 <br>
-                <a href="mailto:admin@bsu.by">Написать Администратору сайта</a>
+                <a href="mailto:bsu.intertech@gmail.com">Написать Администратору сайта</a>
             </td>
         </tr>
 
