@@ -1,226 +1,249 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Удивительная планета — Растения</title>
 </head>
+
 <body id="top" bgcolor="#ffffff" text="#000000" link="#0000ee" vlink="#551a8b">
 
-<table width="97%" border="0" cellpadding="0" cellspacing="0" align="center">
-    <tr bgcolor="#b8dc7c">
-        <td align="center" colspan="3">
-            <!-- h1 — общий заголовок портала; оставь его на каждой странице. -->
-            <h1>Удивительная планета</h1>
-        </td>
-    </tr>
+    <!--
+        ИЗМЕНЕНО: общий каркас полностью перестроен под дизайн-образец.
+        Используется только HTML: фиксированная таблица 800 px, HTML-атрибуты и вложенные таблицы.
+        CSS, style и таблицы стилей не используются.
+    -->
+    <table width="800" border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#b8dc7c">
 
-    <tr bgcolor="#e0e0e0">
-        <td align="center" colspan="3">
-            <!--
-                Ссылки ниже используют относительные пути.
-                Все пять HTML-файлов лежат в одной папке, поэтому достаточно имени файла.
-            -->
-            <p>
-                <a href="index.html">Главная</a> |
-                <a href="geography.html">География</a> |
-                <a href="animals.html">Животные</a> |
-                <a href="plants.html">Растения</a> |
-                <a href="sources.html">Информационные источники</a>
-            </p>
-        </td>
-    </tr>
-
-    <tr>
-        <td align="center">
-            <picture>
-                <source
-                    srcset="/Images/team-zhyz-mmch-pro/mountain.webp"
-                    type="image/webp">
+        <!--
+            ИЗМЕНЕНО: текстовая шапка заменена оригинальным баннером из Images.
+            Причина: это точный графический элемент дизайн-образца.
+        -->
+        <tr>
+            <td>
                 <img
-                    src="/Images/mountain.jpg"
-                    alt="Горы"
-                    width="190"
-                    height="190">
-            </picture>
-        </td>
-        <td align="center">
-            <picture>
-                <source
-                    srcset="../Images/team-zhyz-mmch-pro/koala.webp"
-                    type="image/webp">
-                <img
-                    src="../Images/koala.jpg"
-                    alt="Коала"
-                    width="190"
-                    height="190">
-            </picture>
-        </td>
-        <td align="center">
-            <picture>
-                <source
-                    srcset="../Images/team-zhyz-mmch-pro/flower.webp"
-                    type="image/webp">
-                <img
-                    src="../Images/flower.jpg"
-                    alt="Ярко-красный в белую крапинку цветок в виде морской звезды"
-                    width="190"
-                    height="190">
-            </picture>
-        </td>
-    </tr>
+                    src="../Images/team-zhyz-mmch-pro/Title.jpg"
+                    alt="Удивительная планета"
+                    width="800"
+                    height="231">
+            </td>
+        </tr>
 
-    <tr>
-        <td colspan="3">
+        <!-- Горизонтальное меню под баннером, как в образце -->
+        <tr>
+            <td height="27" valign="middle">
+                <table width="720" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td>
+                            <a href="index.html">Главная</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="geography.html">География</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="animals.html">Животные</a>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Растения
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <a href="sources.html">Информационные источники</a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-            <h2 align="center">Растения</h2>
+        <tr>
+            <td>
+                <!--
+                    ИЗМЕНЕНО: основная область разделена на голубую левую колонку 120 px
+                    и белую область контента 600 px, как в дизайн-образце.
+                -->
+                <table width="720" border="0" cellpadding="0" cellspacing="0" align="center">
+                    <tr>
+                        <td width="120" height="396" valign="top" bgcolor="#acc2d0">
+                            <table width="120" border="0" cellpadding="0" cellspacing="0">
+                                <tr><td height="17">&nbsp;</td></tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="../Images/team-zhyz-mmch-pro/mountain.jpg"
+                                             alt="География"
+                                             width="100"
+                                             height="100">
+                                    </td>
+                                </tr>
+                                <tr><td height="20">&nbsp;</td></tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="../Images/team-zhyz-mmch-pro/koala.jpg"
+                                             alt="Животные"
+                                             width="100"
+                                             height="100">
+                                    </td>
+                                </tr>
+                                <tr><td height="20">&nbsp;</td></tr>
+                                <tr>
+                                    <td align="center">
+                                        <img src="../Images/team-zhyz-mmch-pro/flower.jpg"
+                                             alt="Растения"
+                                             width="100"
+                                             height="100">
+                                    </td>
+                                </tr>
+                                <tr><td height="35">&nbsp;</td></tr>
+                            </table>
+                        </td>
 
-            <p><strong>Быстрый переход:</strong></p>
-            <ul>
-                <li><a href="#biggest-flowers">Самые большие цветы</a></li>
-                <li>
-                    <a href="#long-lived">Растения-долгожители</a>
-                </li>
-                <li>
-                    <a href="#tallest-trees">Самые высокие деревья</a>
-                </li>
-            </ul>
+                        <td width="600" height="396" valign="top" bgcolor="#ffffff">
+                            <table width="100%" border="0" cellpadding="10" cellspacing="0">
+                                <tr>
+                                    <td>
 
-            <h3 id="biggest-flowers">Самые большие цветы</h3>
-            
-            <table border="1" cellpadding="4" cellspacing="4" width="100%">
-                <caption><strong>Самые большие цветы</strong></caption>
-                <thead bgcolor="#d9ead3">
-                    <tr>
-                        <!-- Т.к. в следующей строке тоже идет №-->
-                        <th rowspan="2" >№</th>
-                        <!-- colspan="2": общий заголовок занимает две колонки второй строки шапки. -->
-                        <th colspan="2">Данные о растении</th>
-                    </tr>
-                    <tr>
-                        <th>Название</th>
-                        <th>Примечание</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Аморфофаллус</td>
-                        <td>Высота - 3 м</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Раффлезия</td>
-                        <td>Диаметр - 90 см</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><a href="#top">ВВЕРХ</a></p>
+                                            <!--
+                                                ИЗМЕНЕНО: раздел растений полностью приведён к Planeta_text.doc.
+                                                Двухуровневая шапка добавлена для обязательного PRO colspan.
+                                            -->
+                                            <h2 align="center">Растения-рекордсмены</h2>
 
-            <h3 id="long-lived">Растения-долгожители</h3>
-            
-            <table border="1" cellpadding="4" cellspacing="4" width="100%">
-                <caption><strong>Растения-долгожители</strong></caption>
-                <thead bgcolor="#d9ead3">
-                    <tr>
-                        <!-- Т.к. в следующей строке тоже идет №-->
-                        <th rowspan="2" >№</th>
-                        <!-- colspan="2": общий заголовок занимает две колонки второй строки шапки. -->
-                        <th colspan="2">Данные о растении</th>
-                    </tr>
-                    <tr>
-                        <th>Название</th>
-                        <th>Возраст, лет</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Секвойя</td>
-                        <td>5000</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Кипарис</td>
-                        <td>3000</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Дуб</td>
-                        <!-- Т.к. в той же колонке снизу то же значение -->
-                        <td rowspan="2">1200</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Ель</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Липа</td>
-                        <td>1000</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><a href="#top">ВВЕРХ</a></p>
+                                            <ul>
+                                                <li><a href="#biggest-flowers">Самые большие цветы</a></li>
+                                                <li><a href="#long-lived">Растения-долгожители</a></li>
+                                                <li><a href="#tallest-trees">Самые высокие деревья</a></li>
+                                            </ul>
 
-            <h3 id="tallest-trees">Самые высокие деревья</h3>
-            
-            <table border="1" cellpadding="4" cellspacing="4" width="100%">
-                <caption><strong>Самые высокие деревья</strong></caption>
-                <thead bgcolor="#d9ead3">
-                    <tr>
-                        <!-- Т.к. в следующей строке тоже идет №-->
-                        <th rowspan="2" >№</th>
-                        <!-- colspan="2": общий заголовок занимает две колонки второй строки шапки. -->
-                        <th colspan="2">Данные о растении</th>
-                    </tr>
-                    <tr>
-                        <th>Название</th>
-                        <th>Высота, м</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Эвкалипт</td>
-                        <td>155</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Секвойя</td>
-                        <td>142</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Сосна</td>
-                        <!-- Т.к. в той же колонке снизу то же значение -->
-                        <td rowspan="2">60</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Ель</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Тополь</td>
-                        <td>30</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p><a href="#top">ВВЕРХ</a></p>
+                                            <table id="biggest-flowers" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                                <caption><strong>Самые большие цветы</strong></caption>
+                                                <thead>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <!-- rowspan="2", потому что заголовок «№» занимает 2 строки шапки -->
+                                                        <th rowspan="2">№</th>
+                                                        <!-- colspan="2", потому что общий заголовок объединяет 2 колонки: «Название» и «Примечание» -->
+                                                        <th colspan="2">Данные о растении</th>
+                                                    </tr>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <th>Название</th>
+                                                        <th>Примечание</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Аморфофаллус</td>
+                                                        <td>Высота - 3 м</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Раффлезия</td>
+                                                        <td>Диаметр - 90 см</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><a href="#top">ВВЕРХ</a></p>
 
-            <!-- Для изображений обязательны существующий src, alt, width и height. -->
+                                            <table id="long-lived" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                                <caption><strong>Растения-долгожители</strong></caption>
+                                                <thead>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <!-- rowspan="2", потому что заголовок «№» занимает 2 строки шапки -->
+                                                        <th rowspan="2">№</th>
+                                                        <!-- colspan="2", потому что общий заголовок объединяет 2 колонки: «Название» и «Возраст, лет» -->
+                                                        <th colspan="2">Данные о растении</th>
+                                                    </tr>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <th>Название</th>
+                                                        <th>Возраст, лет</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Секвойя</td>
+                                                        <td>5000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Кипарис</td>
+                                                        <td>3000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Дуб</td>
+                                                        <td>1200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Ель</td>
+                                                        <td>1200</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Липа</td>
+                                                        <td>1000</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><a href="#top">ВВЕРХ</a></p>
 
-        </td>
-    </tr>
+                                            <table id="tallest-trees" border="1" cellpadding="4" cellspacing="4" width="100%">
+                                                <caption><strong>Самые высокие деревья</strong></caption>
+                                                <thead>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <!-- rowspan="2", потому что заголовок «№» занимает 2 строки шапки -->
+                                                        <th rowspan="2">№</th>
+                                                        <!-- colspan="2", потому что общий заголовок объединяет 2 колонки: «Название» и «Высота, м» -->
+                                                        <th colspan="2">Данные о растении</th>
+                                                    </tr>
+                                                    <tr bgcolor="#d9ead3">
+                                                        <th>Название</th>
+                                                        <th>Высота, м</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>Эвкалипт</td>
+                                                        <td>155</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>Секвойя</td>
+                                                        <td>142</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>Сосна</td>
+                                                        <td>60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>Ель</td>
+                                                        <td>60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>Тополь</td>
+                                                        <td>30</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <p><a href="#top">ВВЕРХ</a></p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
 
-    <tr bgcolor="#4a4a4a">
-        <td align="center" colspan="3">
-            <!-- footer завершает страницу и остаётся после всего основного контента. -->
-            <p><font color="#ffffff">© Учебный проект микро-команды студентов, 2026</font></p>
-        </td>
-    </tr>
-</table>
+        <!--
+            ИЗМЕНЕНО: подвал сделан на зелёном фоне и повторяет пользовательский образец.
+        -->
+        <tr>
+            <td height="46" align="center" valign="middle">
+                © Все права защищены. В.В. Фуфаев, 2023
+                <br>
+                <a href="mailto:admin@bsu.by">Написать Администратору сайта</a>
+            </td>
+        </tr>
+
+    </table>
 
 </body>
 </html>
